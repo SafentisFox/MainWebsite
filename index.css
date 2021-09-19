@@ -2,12 +2,28 @@
 
 * {
     box-sizing: border-box;
+    z-index: 1;
 }
 html, body {
     background-color: #649bec;
     margin: 0;
     padding: 0;
 }
+header{
+    position: relative;
+}
+.navBackground{
+    background-image: url("Assets/Graphics/BetterHeaderWaves.svg");
+    aspect-ratio: 900/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top:0px;
+    z-index: 0;
+}
+
 .nav ul {
     margin: 0;
     text-align: center;
@@ -22,16 +38,16 @@ html, body {
     padding: .5em;
     padding-right: 1.5em;
     padding-left: 1.5em;
-    min-block-size: 10px;
     text-decoration: none;
     font-family: 'Passion One', cursive;
     font-size: 25px;
-    color: #000000c5;
+    color: #160147;
 
     -webkit-transition: 500ms;
 }
 
 .nav a:hover{
-    background-color: #628cca;
+    border-radius: 30px;
+    background-color: #0d5cd3;
     -webkit-transition: 500ms;
 }
