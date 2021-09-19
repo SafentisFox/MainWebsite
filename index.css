@@ -46,18 +46,24 @@ header{
     color: #160147;
 
     -webkit-transition: 500ms;
+    transition: 500ms;
 }
 
 .nav a:hover{
     border-radius: 30px;
+    padding-right: 1em;
+    padding-left: 1em;
     background-color: #0d5cd3;
+
     -webkit-transition: 500ms;
+    transition: 500ms;
 }
 
 section.mainSection{
     position: relative;
     z-index: 1;
     padding: 5em;
+    padding-right: 0em;
 }
 .mainSection .pageTitle{
     font-family: 'Fredoka One', cursive;
@@ -75,38 +81,53 @@ section.mainSection{
     color: #000000;
 }
 
+.pageWrapper{
+    display: flex;
+    width: 100%;
+}
+
 .page {
+    flex-grow: 1;
     /* position: absolute; */
     background-color: #e4e4e4;
-    min-width: 150px;
-    max-width: 300px;
-    min-height: 150px;
-    max-height: 300px;
+    width: 20rem;
+    min-width: 10rem;
+    height: 300px;
     border-radius: 30px;
     box-shadow: .3em .3em #c9c9c9;
 
     margin: 1em;
+    transition: 500ms;
+    -webkit-transition: 500ms;
 }
-
+.page:hover{
+    margin: 3em;
+    transition: 250ms;
+    -webkit-transition: 250ms;
+}
 .page .pageTitle, p{
     margin: 0px;
     position: relative;
     text-align: center;
     padding-left: 20px;
     padding-right: 23px;
+    padding-top: 5px;
     
     
 }
 .page p{
     display: -webkit-box;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 10;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
     text-align: center;
     max-height: 280px;
     padding-top: .5em;
+
+    font-family: cursive;
+    font-size: 20px;
 }
 
 .page .pageTitle{
