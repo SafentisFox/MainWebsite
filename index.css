@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    background-color: #649bec;
+    margin: 0;
+    padding: 0;
+}
+.nav ul {
+    margin: 0;
+    text-align: center;
+    max-height: 3em;
+    overflow: hidden;
+}
+.nav li{
+    display: inline;
+}
+.nav .navButton, .nav a {
+    display: inline-block;
+    padding: .5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    min-block-size: 10px;
+    text-decoration: none;
+    font-family: 'Passion One', cursive;
+    font-size: 25px;
+    color: #000000c5;
+
+    -webkit-transition: 500ms;
+}
+
+.nav a:hover{
+    background-color: #628cca;
+    -webkit-transition: 500ms;
+}
